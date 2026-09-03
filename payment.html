@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ela Boutique | Payment</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo-area">
+
+            <img src="image/logo.jpg"
+                 alt="Ela Boutique Logo"
+                 class="logo">
+
+            <div>
+                <h1>ELA</h1>
+                <p>BOUTIQUE</p>
+            </div>
+
+        </div>
+
+
+        <nav class="navbar">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="dresses.html">
+                dresses
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+            <a href="payment.html" class="active">
+                Payment
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= PAGE BANNER ================= -->
+
+    <section class="page-banner">
+
+        <div>
+
+            <p class="section-small-title">
+                ELA BOUTIQUE
+            </p>
+
+            <h2>
+                Secure Payment
+            </h2>
+
+            <p>
+                Complete your order safely and securely.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PAYMENT SECTION ================= -->
+
+    <main class="payment-section">
+
+        <div class="payment-container">
+
+
+            <!-- ================= CUSTOMER DETAILS ================= -->
+
+            <div class="payment-form">
+
+                <h2>
+                    Customer Details
+                </h2>
+
+                <p class="payment-description">
+                    Enter your details to complete your order.
+                </p>
+
+
+                <form action="#" method="post">
+
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label for="fullname">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ADDRESS -->
+
+                    <div class="form-group">
+
+                        <label for="address">
+                            Delivery Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            rows="4"
+                            placeholder="Enter your complete delivery address"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- CITY / PINCODE -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="city">
+                                City
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                placeholder="Chennai"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="pincode">
+                                PIN Code
+                            </label>
+
+                            <input
+                                type="text"
+                                id="pincode"
+                                name="pincode"
+                                placeholder="600001"
+                                maxlength="6"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= PAYMENT METHOD ================= -->
+
+                    <h2 class="payment-method-title">
+                        Choose Payment Method
+                    </h2>
+
+
+                    <div class="payment-options">
+
+
+                        <!-- UPI -->
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="upi"
+                                checked
+                            >
+
+                            <span class="payment-option-content">
+
+                                <strong>
+                                    UPI Payment
+                                </strong>
+
+                                <small>
+                                    Google Pay / PhonePe / Paytm / Other UPI
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <!-- CARD -->
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="card"
+                            >
+
+                            <span class="payment-option-content">
+
+                                <strong>
+                                    Credit / Debit Card
+                                </strong>
+
+                                <small>
+                                    Visa / Mastercard / RuPay
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <!-- NET BANKING -->
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="netbanking"
+                            >
+
+                            <span class="payment-option-content">
+
+                                <strong>
+                                    Net Banking
+                                </strong>
+
+                                <small>
+                                    Pay securely through your bank
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <!-- CASH ON DELIVERY -->
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="cod"
+                            >
+
+                            <span class="payment-option-content">
+
+                                <strong>
+                                    Cash on Delivery
+                                </strong>
+
+                                <small>
+                                    Pay when your order is delivered
+                                </small>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- ================= UPI DETAILS ================= -->
+
+                    <div class="payment-box">
+
+                        <h3>
+                            UPI Payment
+                        </h3>
+
+                        <p>
+                            Enter your UPI ID to continue.
+                        </p>
+
+                        <input
+                            type="text"
+                            name="upi"
+                            placeholder="example@upi"
+                        >
+
+                    </div>
+
+
+                    <!-- ================= CARD DETAILS ================= -->
+
+                    <div class="payment-box">
+
+                        <h3>
+                            Card Details
+                        </h3>
+
+                        <p>
+                            Enter your card information securely.
+                        </p>
+
+
+                        <div class="form-group">
+
+                            <label for="cardname">
+                                Cardholder Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="cardname"
+                                name="cardname"
+                                placeholder="Name on card"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="cardnumber">
+                                Card Number
+                            </label>
+
+                            <input
+                                type="text"
+                                id="cardnumber"
+                                name="cardnumber"
+                                placeholder="XXXX XXXX XXXX XXXX"
+                                maxlength="19"
+                            >
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="expiry">
+                                    Expiry Date
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="expiry"
+                                    name="expiry"
+                                    placeholder="MM/YY"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="cvv">
+                                    CVV
+                                </label>
+
+                                <input
+                                    type="password"
+                                    id="cvv"
+                                    name="cvv"
+                                    placeholder="CVV"
+                                    maxlength="3"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TERMS -->
+
+                    <div class="terms">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                required
+                            >
+
+                            I agree to the terms and conditions.
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- PAYMENT BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="payment-button">
+
+                        Place Order & Pay
+
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+            <!-- ================= ORDER SUMMARY ================= -->
+
+            <aside class="payment-summary">
+
+                <h2>
+                    Order Summary
+                </h2>
+
+
+                <!-- PRODUCT 1 -->
+
+                <div class="summary-product">
+
+                    <img
+                        src="image/dress1.jpg"
+                        alt="Ivory Embroidered Kurta"
+                    >
+
+                    <div>
+
+                        <h3>
+                            Ivory Embroidered Kurta
+                        </h3>
+
+                        <p>
+                            Qty: 1
+                        </p>
+
+                        <strong>
+                            ₹1,499
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+
+                <div class="summary-product">
+
+                    <img
+                        src="image/dress8.jpg"
+                        alt="Indo-Western Sharara"
+                    >
+
+                    <div>
+
+                        <h3>
+                            Indo-Western Sharara
+                        </h3>
+
+                        <p>
+                            Qty: 1
+                        </p>
+
+                        <strong>
+                            ₹2,399
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUMMARY -->
+
+                <div class="payment-summary-line"></div>
+
+
+                <div class="payment-summary-row">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <span>
+                        ₹3,898
+                    </span>
+
+                </div>
+
+
+                <div class="payment-summary-row">
+
+                    <span>
+                        Delivery
+                    </span>
+
+                    <span>
+                        ₹100
+                    </span>
+
+                </div>
+
+
+                <div class="payment-summary-row">
+
+                    <span>
+                        Discount
+                    </span>
+
+                    <span>
+                        − ₹100
+                    </span>
+
+                </div>
+
+
+                <div class="payment-summary-line"></div>
+
+
+                <div class="payment-total">
+
+                    <span>
+                        Total Amount
+                    </span>
+
+                    <strong>
+                        ₹3,898
+                    </strong>
+
+                </div>
+
+
+                <!-- SECURITY -->
+
+                <div class="payment-security">
+
+                    <span>
+                        🔒
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Secure Checkout
+                        </strong>
+
+                        <p>
+                            Your payment information is protected.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BACK TO CART -->
+
+                <a href="cart.html"
+                   class="back-cart">
+
+                    ← Back to Cart
+
+                </a>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= PAYMENT INFORMATION ================= -->
+
+    <section class="payment-info">
+
+        <div>
+
+            <p class="section-small-title">
+                ELA BOUTIQUE
+            </p>
+
+            <h2>
+                Easy & Convenient Shopping
+            </h2>
+
+            <p>
+                Choose from multiple payment options including
+                UPI, cards, net banking and cash on delivery.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-column">
+
+                <h2>
+                    ELA
+                </h2>
+
+                <p>
+                    Exclusive Boutique in the heart of Chennai.
+                    Fashion, elegance and tradition together.
+                </p>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="dresses.html">
+                    dresses
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+                <a href="payment.html">
+                    Payment
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    Chennai, Tamil Nadu
+                </p>
+
+                <p>
+                    India
+                </p>
+
+                <p>
+                    elaboutique@gmail.com
+                </p>
+
+                <p>
+                    +91 98765 43210
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Ela Boutique. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
